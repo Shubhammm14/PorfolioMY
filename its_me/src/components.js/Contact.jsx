@@ -39,8 +39,13 @@ const Contact = () => {
   
 
   return (
+  <div>
     <div className='flex items-center justify-center h-screen text-pink-600 '>
-      <h1 className='text-5xl text-pink-200 font-bold h-[0vh] '>Connect Us</h1>
+      <div className='flex flex-col'>
+   
+      <h1 className='text-5xl text-pink-200 font-bold h-[0vh] my-10'>Connect Us</h1>
+      <h1 className='text-orange-700 my-4'>currently the server is down <a className='text-blue-900' href='https://forms.gle/23zCWT7QYHSywfFm8'>Click Me To Connect</a></h1>
+      </div>
       <section>
         <form onSubmit={handleSubmit} className='text-2xl  text-black items-center flex flex-col shadow-[0_35px_100px_-15px_rgba(255,0,127,0.5)] bg-black w-[50vw] p-8 mt-5 rounded-md shadow-md'>
           {/* <label htmlFor="firstName">First Name:</label> */}
@@ -106,6 +111,7 @@ const Contact = () => {
           </div>
         )}
       </section>
+    </div>
     </div>
   );
 };
